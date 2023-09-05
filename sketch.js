@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(800, 1000);
+  createCanvas(windowWidth, 2 * windowHeight);
 }
 
 function createHorizontalGradient(color1, color2, leftX, rightX, upperY, lowerY){
@@ -16,4 +16,5 @@ function draw() {
   var color1 = color("#0E21A0");
   var color2 = color("#EC53B0");
   createHorizontalGradient(color1, color2, 0, width, 0, height);
+  noLoop();
 }
